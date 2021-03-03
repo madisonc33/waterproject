@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  waterproject:
+    image: ${DOCKER_REGISTRY-}waterproject
+    build:
+      context: .
+      dockerfile: WaterProject/Dockerfile
